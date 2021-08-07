@@ -55,6 +55,9 @@ const actPHP = document.querySelector('#ACTPHP');
 const JAVA = document.querySelector('#JAVA')
 const actJAVA = document.querySelector('#ACTJAVA');
 
+const RUBY = document.querySelector('#RUBY')
+const actRUBY = document.querySelector('#ACTRUBY');
+
 const SWI = document.querySelector('#SWI')
 const actSWI = document.querySelector('#ACTSWI');
 
@@ -78,9 +81,10 @@ dropDown.addEventListener('click', function(){
 //------------------------dont look under here------------------
 webD.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    webD.classList.toggle("selectedField")
     actwebD.classList.toggle("is-hidden");
     actwebD.classList.toggle("fadeIn");
-    webD.classList.add("selectedField");
+    
 });
 
 softwareD.addEventListener('click', function(){
@@ -145,12 +149,6 @@ CSharp.addEventListener('click', function(){
     actCSharp.classList.toggle("fadeIn");
 });
 
-Expert.addEventListener('click', function(){
-    console.log("They should invent radio-functioning buttons");
-    actExpert.classList.toggle("is-hidden");
-    actExpert.classList.toggle("fadeIn");
-});
-
 PY.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
     actPY.classList.toggle("is-hidden");
@@ -179,6 +177,12 @@ JAVA.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
     actJAVA.classList.toggle("is-hidden");
     actJAVA.classList.toggle("fadeIn");
+});
+
+RUBY.addEventListener('click', function(){
+    console.log("They should invent radio-functioning buttons");
+    actRUBY.classList.toggle("is-hidden");
+    actRUBY.classList.toggle("fadeIn");
 });
 
 SWI.addEventListener('click', function(){
