@@ -25,7 +25,7 @@
   <body style="background-color: #0f1012">
     <nav class="navbar is-dark" style="background-color: #212121">
       <div class="navbar-brand" style="background-color: #212121">
-        <a href="http://127.0.0.1:9000/" class="logo"
+        <a href="http://127.0.0.1:8000/" class="logo"
           ><img
             src="{%static 'coderite.png'%}"
             alt="CODERITE"
@@ -153,6 +153,15 @@
                 is-danger
               ">
               Penetration Tester
+            </button>
+            <button id="firmD" class="
+            button
+            is-link is-rounded is-outlined
+            mr-2
+            mb-2
+            is-danger
+          ">
+            Firmware Developer
             </button>
             <button id="Gen" class="
             button
@@ -375,7 +384,19 @@
         ">
         Penetration Tester
       </button>
-      
+
+      <button id="ACTfirmD" class="
+      button
+      is-link is-rounded is-outlined
+      mr-2
+      mb-2
+      is-active
+      is-hidden
+      is-danger
+    ">
+      Firmware Developer
+      </button>
+
       <button id="ACTGen" class="
       button
       is-link is-rounded is-outlined
