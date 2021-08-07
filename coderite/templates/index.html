@@ -1,91 +1,82 @@
 <!--Cards auto-format depending on size, should have minimal problems with responsivity-->
 {%extends "base.html"%} {%block content%} {% for post in post_list %}
-<div class="columns">
-  <div class="column is-half">
-    <div
-      class="card is-dark mt-4 ml-6"
-      style="
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 35%;
-      "
-    >
-      <div class="card-image">
-        <figure class="image is-128x128 ml-4">
-          <!--PICTURE + ALT-->
-          <!--KEEP AS SVG-->
-          <img src="Threejs-logo.svg" alt="EXAMPLEIMAGE" />
-        </figure>
-      </div>
-      <div class="card-content">
-        <div class="media">
-          <div class="media-content has-text-white">
-            <!--Add Title & Author-->
-            <p class="title is-4 has-text-white">
-              <a href="">{{post.title}}</a>
-            </p>
-            <p class="subtitle is-6 has-text-white">{{post.author}}</p>
-          </div>
-        </div>
 
-        <!--DESC CONTENT-->
-        <div class="content has-text-white" style="width: 27rem">
-          {{post.description}}
-          <br />
-          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary"
-            >Read More</a
-          >
-          <br />
-          <!--ALL TAGS (MAX 3 ADVISED). CHANGE NAME TO APPROPRIATE TAG AND CHANGE CLASS NAME TO APPROPRIATE CLASS NAME. E.G LABELJS > LABELPY -->
-          <button
-            href="#"
-            class="
-              button
-              is-static is-rounded is-outlined
-              mr-2
-              mb-2
-              is-info
-              mt-4
-              is-active
-              LabelJS
-            "
-          >
-            JavaScript
-          </button>
-          <button
-            href="#"
-            class="
-              button
-              is-static is-rounded is-outlined
-              mr-2
-              mb-2
-              is-danger
-              mt-4
-              is-active
-              LabelWD
-            "
-          >
-            Web Developer
-          </button>
-          <button
-            href="#"
-            class="
-              button
-              is-static is-rounded is-outlined
-              mr-2
-              mb-2
-              is-link
-              mt-4
-              LabelINT
-            "
-          >
-            Intermediate
-          </button>
-        </div>
+<div
+  class="card is-dark mt-4 ml-6"
+  style="display: flex; flex-direction: row; align-items: center; width: 65vh"
+>
+  <div class="card-image">
+    <figure class="image is-128x128 ml-4">
+      <!--PICTURE + ALT-->
+      <!--KEEP AS SVG-->
+      <img src="Threejs-logo.svg" alt="EXAMPLEIMAGE" />
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content has-text-white">
+        <!--Add Title & Author-->
+        <p class="title is-4 has-text-white">
+          <a href="">{{post.title}}</a>
+        </p>
+        <p class="subtitle is-6 has-text-white">{{post.author}}</p>
       </div>
     </div>
+
+    <!--DESC CONTENT-->
+    <div class="content has-text-white" style="width: 27rem">
+      {{post.description}}
+      <br />
+      <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary"
+        >Read More</a
+      >
+      <br />
+      <!--ALL TAGS (MAX 3 ADVISED). CHANGE NAME TO APPROPRIATE TAG AND CHANGE CLASS NAME TO APPROPRIATE CLASS NAME. E.G LABELJS > LABELPY -->
+      <button
+        href="#"
+        class="
+          button
+          is-static is-rounded is-outlined
+          mr-2
+          mb-2
+          is-info
+          mt-4
+          is-active
+          LabelJS
+        "
+      >
+        JavaScript
+      </button>
+      <button
+        href="#"
+        class="
+          button
+          is-static is-rounded is-outlined
+          mr-2
+          mb-2
+          is-danger
+          mt-4
+          is-active
+          LabelWD
+        "
+      >
+        Web Developer
+      </button>
+      <button
+        href="#"
+        class="
+          button
+          is-static is-rounded is-outlined
+          mr-2
+          mb-2
+          is-link
+          mt-4
+          LabelINT
+        "
+      >
+        Intermediate
+      </button>
+    </div>
   </div>
-  {%endfor%}
 </div>
-{%endblock%}
+{%endfor%} {%endblock%}
