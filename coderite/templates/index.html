@@ -1,10 +1,7 @@
 <!--Cards auto-format depending on size, should have minimal problems with responsivity-->
 {%extends "base.html"%} {%block content%} {% for post in post_list %}
 
-<div
-  class="card is-dark mt-4 ml-6"
-  style="display: flex; flex-direction: row; align-items: center; width: 65vh"
->
+<div class="card is-dark mt-4 ml-6" style="display: flex; flex-direction: row; align-items: center; width: 65vh">
   <div class="card-image">
     <figure class="image is-128x128 ml-4">
       <!--PICTURE + ALT-->
@@ -28,9 +25,7 @@
       {{post.description}}
       <br />
       <!--ALL TAGS (MAX 3 ADVISED). CHANGE NAME TO APPROPRIATE TAG AND CHANGE CLASS NAME TO APPROPRIATE CLASS NAME. E.G LABELJS > LABELPY -->
-      <button
-        href="#"
-        class="
+      <button href="#" class="
           button
           is-static is-rounded is-outlined
           mr-2
@@ -39,13 +34,10 @@
           mt-4
           is-active
           LabelJS
-        "
-      >
-        JavaScript
+        ">
+        {{ post.tags }}
       </button>
-      <button
-        href="#"
-        class="
+      <button href="#" class="
           button
           is-static is-rounded is-outlined
           mr-2
@@ -54,13 +46,11 @@
           mt-4
           is-active
           LabelWD
-        "
-      >
-        Web Developer
+        ">
+        {{ post.tags }}
       </button>
-      <button
-        href="#"
-        class="
+      
+      <button href="#" class="
           button
           is-static is-rounded is-outlined
           mr-2
@@ -68,9 +58,8 @@
           is-link
           mt-4
           LabelINT
-        "
-      >
-        Intermediate
+        ">
+        {{ post.tags }}
       </button>
     </div>
   </div>
