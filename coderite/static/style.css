@@ -17,3 +17,41 @@ html {
   height: 30px;
   width: 30px;
 }
+
+.navbar-menu.is-active {
+  animation: navAnim 0.2s ease-in-out;
+}
+
+@keyframes navAnim {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: 100px;
+  }
+}
+
+.is-dark {
+  color: #1a1c1e;
+  background: #1a1c1e;
+  background-color: #1a1c1e;
+}
+
+.leftMain {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: column;
+}
+
+.opaEdit {
+  opacity: 0.2;
+}
+
+.card .card-image,
+.card .card-image .image img {
+  height: 200px;
+}

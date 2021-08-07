@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/89001a8358.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Coderite</title>
+  </head>
+
+  <!--Similar to card.html but formatted to fix extra content-->
+  <body>
+
+    <div class="columns">
+        <div class="column is-half" style="background-color: #0f1012">
+        <div
+      class="card is-dark mt-4 ml-6"
+      style="display: flex; flex-direction: column; width: 100%; flex-wrap: wrap; align-items: center;"
+    >
+      <div class="card-image">
+        <figure class="image is-128x128 ml-4">
+          <!--PICTURE + ALT--> <!--KEEP AS SVG-->
+          <img src="Threejs-logo.svg" alt="EXAMPLEIMAGE" />
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content has-text-white">
+
+            <!--Add Title & Author-->
+            <p class="title is-4 has-text-white">EXAMPLETITLE</p>
+            <p class="subtitle is-6 has-text-white">EXAMPLEAUTHOR</p>
+          </div>
+        </div>
+
+        <!--EXTENDED CONTENT (NO MAX LIMIT)-->
+        <div class="content has-text-white">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione reiciendis iusto asperiores nostrum facilis quaerat quia, cupiditate officiis dolor quam. Velit, nihil ullam! Aliquid at nisi reprehenderit eaque distinctio autem corrupti nulla esse suscipit fugiat, quidem provident sit possimus veniam nostrum dolor placeat impedit illum, et, odio porro. Quasi necessitatibus quis repellat incidunt excepturi veniam quia, laboriosam laborum recusandae ipsam et. Iste vitae exercitationem sequi animi perferendis dolor aliquid placeat minus modi distinctio porro sed saepe quisquam ipsum atque est asperiores, incidunt voluptas totam nisi repudiandae. Quaerat, libero magni minima beatae reiciendis modi nisi quasi omnis pariatur. Enim nemo officiis ipsam doloremque fuga. Omnis deleniti assumenda molestiae in excepturi quas consequuntur aspernatur veniam voluptatem porro commodi sunt nihil incidunt culpa voluptate facilis quos, facere rerum ad vero mollitia. Placeat nihil aliquid ab temporibus tempora iure, doloremque, culpa rem iusto voluptatum labore aperiam id fugit. Corrupti voluptatum impedit sit! Eius, est! Temporibus distinctio ducimus eius quos placeat. Exercitationem cumque tempora facilis in assumenda excepturi, illum recusandae magnam perferendis obcaecati aspernatur vero impedit molestiae incidunt iure quasi nihil natus inventore eligendi officiis ducimus id earum! Ducimus, sit facere rem aut obcaecati blanditiis quisquam mollitia expedita et accusantium. Reiciendis, recusandae. Excepturi at optio quasi laudantium neque, deserunt laboriosam enim sed magni in dolorem. Soluta voluptates illo dolores! Architecto voluptas sequi, voluptatibus a rerum suscipit magni at doloribus eligendi vel eaque ipsum sit repellendus possimus quo porro consequuntur provident iusto. Maiores explicabo temporibus dolorum corporis nemo sunt! Asperiores tempore ea molestiae ipsum velit aliquid quam, rerum culpa provident, iure blanditiis sint. Dolor doloremque totam odit magnam eos! Voluptates similique quibusdam, inventore vitae, rem deleniti error voluptate iusto ullam amet illo aliquam repudiandae dolorum ratione quos saepe officiis fuga adipisci laboriosam minima in dolores? Libero error doloribus placeat necessitatibus, culpa quae a aspernatur fugiat dolor.
+          <br />
+        </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <!--MIGHT DIG INTO THE OTHER CARD WITH SMALLER SCREENS-->
+    <div class="column is-half" style="background-color: #0f1012">
+        <div
+        class="card is-dark mt-4 ml-6 is-hidden-touch"
+        style="display: flex; flex-direction: column; width: 55%; flex-wrap: wrap;"
+      >
+
+      <!--SUGGESTED CARD-->
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content has-text-white">
+  
+              <p class="title is-4 has-text-white">Related Articles/Guides:</p>
+            </div>
+          </div>
+  
+          <!--SUGGESTED CONTENT-->
+          <div class="content has-text-white">
+              <div>
+                <!--Change the title according to suggested content-->
+                <h5 class="has-text-white">RELATED ARTICLE/VIDEO 1:</h5> 
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>  
+              <div class="pt-4">
+                <!--Change the title according to suggested content-->
+                <h5 class="has-text-white">RELATED ARTICLE/VIDEO 2:</h5>
+                <!--KEEP AS 2 : 1 FOR ALL CONTENT, NOT ADVISABLE TO GO ABOVE 400 X 200 OR 1 : 1 RATIO FOR IMAGES (500 X 500 IDEALLY)-->
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div> 
+            <br />
+          </div>
+          </div>
+          
+          </div>
+    </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
