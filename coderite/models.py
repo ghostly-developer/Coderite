@@ -1,7 +1,4 @@
 from django.db import models
-from django.db.models.fields import CharField
-from django_mysql.models import ListCharField
-from django_mysql.models.base import Model
 from django.core.validators import FileExtensionValidator
 
 STATUS = (
@@ -17,13 +14,10 @@ class Post(models.Model):
     description = models.CharField(max_length=200)
     created_on = models.DateTimeField(auto_now_add=True)
     content = models.TextField()
-    Tags = ListCharField(
-        base_field=CharField(max_length=15),
-        size=5,
-        max_length=(5*20)
-    )
+    field_tag = models.CharField(max_length=50, default="blank")
+    level_tag = models.CharField(max_length=50, default="blank")
+    lang_tag = models.CharField(max_length=50, default="blank")
     status = models.IntegerField(choices=STATUS, default=0)
-
 class Meta:
     ordering = ['-created_on']
 
