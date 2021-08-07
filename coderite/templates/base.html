@@ -1,3 +1,4 @@
+{%require static%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,7 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{%static 'style.css'%}" />
     <title>Coderite</title>
   </head>
 
@@ -26,7 +27,7 @@
       <div class="navbar-brand" style="background-color: #212121">
         <a href="./index.html" class="logo"
           ><img
-            src="/CoderiteXH/Coderite/ImageAssets/coderite.png"
+            src="{%static 'coderite.png'%}"
             alt="CODERITE"
             width="25"
             height="25"
