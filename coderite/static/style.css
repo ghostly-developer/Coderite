@@ -35,7 +35,7 @@ html {
 }
 
 .fadeIn {
-  animation: appearAnim 1s ease-in-out;
+  animation: appearAnim 0.8s ease-in-out;
 }
 @keyframes appearAnim {
   0% {

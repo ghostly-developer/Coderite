@@ -17,7 +17,7 @@
       <div class="media-content has-text-white">
         <!--Add Title & Author-->
         <p class="title is-4 has-text-white">
-          <a href="">{{post.title}}</a>
+          <a href="{% url 'post_detail' post.slug %}">{{post.title}}</a>
         </p>
         <p class="subtitle is-6 has-text-white">{{post.author}}</p>
       </div>
@@ -26,10 +26,6 @@
     <!--DESC CONTENT-->
     <div class="content has-text-white" style="width: 27rem">
       {{post.description}}
-      <br />
-      <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary"
-        >Read More</a
-      >
       <br />
       <!--ALL TAGS (MAX 3 ADVISED). CHANGE NAME TO APPROPRIATE TAG AND CHANGE CLASS NAME TO APPROPRIATE CLASS NAME. E.G LABELJS > LABELPY -->
       <button
