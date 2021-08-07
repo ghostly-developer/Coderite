@@ -265,7 +265,7 @@ resetTag.addEventListener('click', function(){
     actgameD.classList.add("is-hidden");
     actOSD.classList.add("is-hidden");
     actpenT.classList.add("is-hidden");
-    Gen.classList.add("is-hidden");
+    actGen.classList.add("is-hidden");
     actBeginner.classList.add("is-hidden");
     actIntermediate.classList.add("is-hidden");
     actExpert.classList.add("is-hidden");
