@@ -5,7 +5,7 @@ const dropDown = document.querySelector('#dropdown');
 const AddTag = document.querySelector('#addTag');
 const addRepo = document.querySelector('#addRepo');
 const body = document.querySelector('body');
-
+const resetTag = document.querySelector('#resetTag')
 
 const webD = document.querySelector('#webD');
 const actwebD = document.querySelector('#ACTwebD');
@@ -81,7 +81,8 @@ dropDown.addEventListener('click', function(){
 //------------------------dont look under here------------------
 webD.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
-    webD.classList.toggle("selectedField")
+    webD.classList.toggle("has-background-danger-dark");
+    webD.classList.toggle("has-text-white");
     actwebD.classList.toggle("is-hidden");
     actwebD.classList.toggle("fadeIn");
     
@@ -89,42 +90,56 @@ webD.addEventListener('click', function(){
 
 softwareD.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    softwareD.classList.toggle("has-background-danger-dark");
+    softwareD.classList.toggle("has-text-white");
     actsoftwareD.classList.toggle("is-hidden");
     actsoftwareD.classList.toggle("fadeIn");
 });
 
 gameD.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    gameD.classList.toggle("has-background-danger-dark");
+    gameD.classList.toggle("has-text-white");
     actgameD.classList.toggle("is-hidden");
     actgameD.classList.toggle("fadeIn");
 });
 
 OSD.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    OSD.classList.toggle("has-background-danger-dark");
+    OSD.classList.toggle("has-text-white");
     actOSD.classList.toggle("is-hidden");
     actOSD.classList.toggle("fadeIn");
 });
 
 penT.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    penT.classList.toggle("has-background-danger-dark");
+    penT.classList.toggle("has-text-white");
     actpenT.classList.toggle("is-hidden");
     actpenT.classList.toggle("fadeIn");
 });
 
 Beginner.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    Beginner.classList.toggle("has-background-link-dark");
+    Beginner.classList.toggle("has-text-white");
     actBeginner.classList.toggle("is-hidden");
     actBeginner.classList.toggle("fadeIn");
 });
 
 Intermediate.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    Intermediate.classList.toggle("has-background-link-dark");
+    Intermediate.classList.toggle("has-text-white");
     actIntermediate.classList.toggle("is-hidden");
     actIntermediate.classList.toggle("fadeIn");
 });
 
 Expert.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    Expert.classList.toggle("has-background-link-dark");
+    Expert.classList.toggle("has-text-white");
     actExpert.classList.toggle("is-hidden");
     actExpert.classList.toggle("fadeIn");
 });
@@ -133,72 +148,175 @@ Expert.addEventListener('click', function(){
 
 CPP.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    CPP.classList.toggle("has-background-info-dark");
+    CPP.classList.toggle("has-text-white");
     actCPP.classList.toggle("is-hidden");
     actCPP.classList.toggle("fadeIn");
 });
 
 JS.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    JS.classList.toggle("has-background-info-dark");
+    JS.classList.toggle("has-text-white");
     actJS.classList.toggle("is-hidden");
     actJS.classList.toggle("fadeIn");
 });
 
 CSharp.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    CSharp.classList.toggle("has-background-info-dark");
+    CSharp.classList.toggle("has-text-white");
     actCSharp.classList.toggle("is-hidden");
     actCSharp.classList.toggle("fadeIn");
 });
 
 PY.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    PY.classList.toggle("has-background-info-dark");
+    PY.classList.toggle("has-text-white");
     actPY.classList.toggle("is-hidden");
     actPY.classList.toggle("fadeIn");
 });
 
 GOL.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    GOL.classList.toggle("has-background-info-dark");
+    GOL.classList.toggle("has-text-white");
     actGOL.classList.toggle("is-hidden");
     actGOL.classList.toggle("fadeIn");
 });
 
 HTMLCSS.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    HTMLCSS.classList.toggle("has-background-info-dark");
+    HTMLCSS.classList.toggle("has-text-white");
     actHTMLCSS.classList.toggle("is-hidden");
     actHTMLCSS.classList.toggle("fadeIn");
 });
 
 PHP.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    PHP.classList.toggle("has-background-info-dark");
+    PHP.classList.toggle("has-text-white");
     actPHP.classList.toggle("is-hidden");
     actPHP.classList.toggle("fadeIn");
 });
 
 JAVA.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    JAVA.classList.toggle("has-background-info-dark");
+    JAVA.classList.toggle("has-text-white");
     actJAVA.classList.toggle("is-hidden");
     actJAVA.classList.toggle("fadeIn");
 });
 
 RUBY.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    RUBY.classList.toggle("has-background-info-dark");
+    RUBY.classList.toggle("has-text-white");
     actRUBY.classList.toggle("is-hidden");
     actRUBY.classList.toggle("fadeIn");
 });
 
 SWI.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    SWI.classList.toggle("has-background-info-dark");
+    SWI.classList.toggle("has-text-white");
     actSWI.classList.toggle("is-hidden");
     actSWI.classList.toggle("fadeIn");
 });
 
 ASM86.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    ASM86.classList.toggle("has-background-info-dark");
+    ASM86.classList.toggle("has-text-white");
     actASM86.classList.toggle("is-hidden");
     actASM86.classList.toggle("fadeIn");
 });
 
 ASM64.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
+    ASM64.classList.toggle("has-background-info-dark");
+    ASM64.classList.toggle("has-text-white");
     actASM64.classList.toggle("is-hidden");
     actASM64.classList.toggle("fadeIn");
+});
+
+
+
+//----------------RESET---------------------------------
+resetTag.addEventListener('click', function(){
+    console.log("ALL TAGS RESET");
+
+    //--------------ACTIVE TAG RESET---------------
+    actwebD.classList.add("is-hidden");
+    actsoftwareD.classList.add("is-hidden");
+    actgameD.classList.add("is-hidden");
+    actOSD.classList.add("is-hidden");
+    actpenT.classList.add("is-hidden");
+    actBeginner.classList.add("is-hidden");
+    actIntermediate.classList.add("is-hidden");
+    actExpert.classList.add("is-hidden");
+    actCPP.classList.add("is-hidden");
+    actJS.classList.add("is-hidden");
+    actCSharp.classList.add("is-hidden");
+    actPY.classList.add("is-hidden");
+    actGOL.classList.add("is-hidden");
+    actHTMLCSS.classList.add("is-hidden");
+    actPHP.classList.add("is-hidden");
+    actJAVA.classList.add("is-hidden");
+    actRUBY.classList.add("is-hidden");
+    actSWI.classList.add("is-hidden");
+    actASM86.classList.add("is-hidden");
+    actASM64.classList.add("is-hidden");
+
+
+    //-------------Selected Styles Reset Pt.1------------------
+    webD.classList.remove("has-background-danger-dark");
+    softwareD.classList.remove("has-background-danger-dark");
+    gameD.classList.remove("has-background-danger-dark");
+    OSD.classList.remove("has-background-danger-dark");
+    penT.classList.remove("has-background-danger-dark");
+
+    Beginner.classList.remove("has-background-link-dark");
+    Intermediate.classList.remove("has-background-link-dark");
+    Expert.classList.remove("has-background-link-dark");
+
+    CPP.classList.remove("has-background-info-dark");
+    JS.classList.remove("has-background-info-dark");
+    CSharp.classList.remove("has-background-info-dark");
+    PY.classList.remove("has-background-info-dark");
+    GOL.classList.remove("has-background-info-dark");
+    HTMLCSS.classList.remove("has-background-info-dark");
+    PHP.classList.remove("has-background-info-dark");
+    JAVA.classList.remove("has-background-info-dark");
+    RUBY.classList.remove("has-background-info-dark");
+    SWI.classList.remove("has-background-info-dark");
+    ASM86.classList.remove("has-background-info-dark");
+    ASM64.classList.remove("has-background-info-dark");
+
+    //-------------Selected Styles Reset Pt.2------------------
+    webD.classList.remove("has-text-white");
+    softwareD.classList.remove("has-text-white");
+    gameD.classList.remove("has-text-white");
+    OSD.classList.remove("has-text-white");
+    penT.classList.remove("has-text-white");
+
+    Beginner.classList.remove("has-text-white");
+    Intermediate.classList.remove("has-text-white");
+    Expert.classList.remove("has-text-white");
+    
+    CPP.classList.remove("has-text-white");
+    JS.classList.remove("has-text-white");
+    CSharp.classList.remove("has-text-white");
+    PY.classList.remove("has-text-white");
+    GOL.classList.remove("has-text-white");
+    HTMLCSS.classList.remove("has-text-white");
+    PHP.classList.remove("has-text-white");
+    JAVA.classList.remove("has-text-white");
+    RUBY.classList.remove("has-text-white");
+    SWI.classList.remove("has-text-white");
+    ASM86.classList.remove("has-text-white");
+    ASM64.classList.remove("has-text-white");
+
 });
