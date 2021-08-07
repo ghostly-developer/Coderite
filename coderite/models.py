@@ -9,7 +9,7 @@ STATUS = (
 )
 # Create your models here.
 class Post(models.Model):
-    image = models.ImageField(upload_to = 'assets')
+    image = models.ImageField(upload_to = 'coderite/assets')
     slug = models.SlugField(max_length=200, unique=True)
     title = models.CharField(max_length=250)
     author = models.CharField(max_length=200)
