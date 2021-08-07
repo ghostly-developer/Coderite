@@ -22,6 +22,9 @@ const actOSD = document.querySelector('#ACTOSD');
 const penT = document.querySelector('#penT');
 const actpenT = document.querySelector('#ACTpenT');
 
+const Gen = document.querySelector('#Gen');
+const actGen = document.querySelector('#ACTGen');
+
 const Beginner = document.querySelector('#Beginner')
 const actBeginner = document.querySelector('#ACTBeginner');
 
@@ -118,6 +121,14 @@ penT.addEventListener('click', function(){
     penT.classList.toggle("has-text-white");
     actpenT.classList.toggle("is-hidden");
     actpenT.classList.add("fadeIn");
+});
+
+Gen.addEventListener('click', function(){
+    console.log("They should invent radio-functioning buttons");
+    Gen.classList.toggle("has-background-danger-dark");
+    Gen.classList.toggle("has-text-white");
+    actGen.classList.toggle("is-hidden");
+    actGen.classList.add("fadeIn");
 });
 
 Beginner.addEventListener('click', function(){
@@ -254,6 +265,7 @@ resetTag.addEventListener('click', function(){
     actgameD.classList.add("is-hidden");
     actOSD.classList.add("is-hidden");
     actpenT.classList.add("is-hidden");
+    Gen.classList.add("is-hidden");
     actBeginner.classList.add("is-hidden");
     actIntermediate.classList.add("is-hidden");
     actExpert.classList.add("is-hidden");
@@ -277,6 +289,7 @@ resetTag.addEventListener('click', function(){
     gameD.classList.remove("has-background-danger-dark");
     OSD.classList.remove("has-background-danger-dark");
     penT.classList.remove("has-background-danger-dark");
+    Gen.classList.remove("has-background-danger-dark");
 
     Beginner.classList.remove("has-background-link-dark");
     Intermediate.classList.remove("has-background-link-dark");
@@ -301,6 +314,7 @@ resetTag.addEventListener('click', function(){
     gameD.classList.remove("has-text-white");
     OSD.classList.remove("has-text-white");
     penT.classList.remove("has-text-white");
+    Gen.classList.remove("has-text-white");
 
     Beginner.classList.remove("has-text-white");
     Intermediate.classList.remove("has-text-white");

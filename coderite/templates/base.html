@@ -43,6 +43,7 @@
         <div class="navbar-end">
           <img
             class="pfp mt-4 is-hidden-touch"
+            href="http://127.0.0.1:8000/"
             src="{%static 'default.png'%}"
             alt="PFP"
           />
@@ -86,7 +87,7 @@
               <h3
                 class="has-text-grey-light has-text-weight-semibold is-size-5"
               >
-                Tag Customization:
+                Customize Tags:
                 <button
                 class="
                   button
@@ -95,7 +96,7 @@
                 "
                 id="resetTag"
               >
-                Reset Tags
+                Reset
               </button>
               </h3>
 
@@ -153,6 +154,15 @@
               ">
               Penetration Tester
             </button>
+            <button id="Gen" class="
+            button
+            is-link is-rounded is-outlined
+            mr-2
+            mb-2
+            is-danger
+          ">
+            General
+          </button>
             
             <hr
             class="rounded mt-2 mb-4"
@@ -366,6 +376,17 @@
         Penetration Tester
       </button>
       
+      <button id="ACTGen" class="
+      button
+      is-link is-rounded is-outlined
+      mr-2
+      mb-2
+      is-active
+      is-hidden
+      is-danger
+    ">
+      General
+    </button>
 
       <button  id="ACTBeginner" class="
           button
