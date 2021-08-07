@@ -21,11 +21,6 @@ dropDown.addEventListener('click', function(){
 });
 
 
-deletebtn.addEventListener('click', function(){
-    console.log("Add Tag De-active");
-    AddTag.classList.toggle("is-hidden");
-});
-
 webD.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
     webD.classList.toggle("is-active");

@@ -3,8 +3,16 @@
 
 <div class="columns">
   <div class="column is-half" style="background-color: #0f1012">
-    <div class="card is-dark mt-4 ml-6"
-      style="display: flex; flex-direction: column; width: 100%; flex-wrap: wrap; align-items: center;">
+    <div
+      class="card is-dark mt-4 ml-6"
+      style="
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+      "
+    >
       <div class="card-image">
         <figure class="image is-128x128 ml-4">
           <!--PICTURE + ALT-->
@@ -15,9 +23,10 @@
       <div class="card-content">
         <div class="media">
           <div class="media-content has-text-white">
-
             <!--Add Title & Author-->
-            <p class="title is-4 has-text-white"> <a href="">{{post.title}}</a></p>
+            <p class="title is-4 has-text-white">
+              <a href="">{{post.title}}</a>
+            </p>
             <p class="subtitle is-6 has-text-white">{{post.author}}</p>
           </div>
         </div>
@@ -28,20 +37,24 @@
           <br />
         </div>
       </div>
-
     </div>
   </div>
 
   <!--MIGHT DIG INTO THE OTHER CARD WITH SMALLER SCREENS-->
   <div class="column is-half" style="background-color: #0f1012">
-    <div class="card is-dark mt-4 ml-6 is-hidden-touch"
-      style="display: flex; flex-direction: column; width: 55%; flex-wrap: wrap;">
-
+    <div
+      class="card is-dark mt-4 ml-6 is-hidden-touch is-hidden-touch"
+      style="
+        display: flex;
+        flex-direction: column;
+        width: 50vh;
+        flex-wrap: wrap;
+      "
+    >
       <!--SUGGESTED CARD-->
       <div class="card-content">
         <div class="media">
           <div class="media-content has-text-white">
-
             <p class="title is-4 has-text-white">Related Articles/Guides:</p>
           </div>
         </div>
@@ -51,24 +64,34 @@
           <div>
             <!--Change the title according to suggested content-->
             <h5 class="has-text-white">RELATED ARTICLE/VIDEO 1:</h5>
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="YouTube video player" frameborder="0"
+            <iframe
+              width="400"
+              height="200"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="YouTube video player"
+              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+              allowfullscreen
+            ></iframe>
           </div>
           <div class="pt-4">
             <!--Change the title according to suggested content-->
             <h5 class="has-text-white">RELATED ARTICLE/VIDEO 2:</h5>
             <!--KEEP AS 2 : 1 FOR ALL CONTENT, NOT ADVISABLE TO GO ABOVE 400 X 200 OR 1 : 1 RATIO FOR IMAGES (500 X 500 IDEALLY)-->
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="YouTube video player" frameborder="0"
+            <iframe
+              width="400"
+              height="200"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="YouTube video player"
+              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+              allowfullscreen
+            ></iframe>
           </div>
           <br />
         </div>
       </div>
-
     </div>
   </div>
-{%endblock content%}
+  {%endblock content%}
+</div>
