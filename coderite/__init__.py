@@ -32,6 +32,12 @@
             height="25"
             class="ml-6 my-4"
         /></a>
+        <!--You can only see this in a mobile screen or something smaller than 1200x1200-->
+        <a class="navbar-burger mt-2 mr-2" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
       </div>
     </nav>
   </body>
