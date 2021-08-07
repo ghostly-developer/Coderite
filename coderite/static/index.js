@@ -84,7 +84,7 @@ webD.addEventListener('click', function(){
     webD.classList.toggle("has-background-danger-dark");
     webD.classList.toggle("has-text-white");
     actwebD.classList.toggle("is-hidden");
-    actwebD.classList.toggle("fadeIn");
+    actwebD.classList.add("fadeIn");
     
 });
 
@@ -93,7 +93,7 @@ softwareD.addEventListener('click', function(){
     softwareD.classList.toggle("has-background-danger-dark");
     softwareD.classList.toggle("has-text-white");
     actsoftwareD.classList.toggle("is-hidden");
-    actsoftwareD.classList.toggle("fadeIn");
+    actsoftwareD.classList.add("fadeIn");
 });
 
 gameD.addEventListener('click', function(){
@@ -101,7 +101,7 @@ gameD.addEventListener('click', function(){
     gameD.classList.toggle("has-background-danger-dark");
     gameD.classList.toggle("has-text-white");
     actgameD.classList.toggle("is-hidden");
-    actgameD.classList.toggle("fadeIn");
+    actgameD.classList.add("fadeIn");
 });
 
 OSD.addEventListener('click', function(){
@@ -109,7 +109,7 @@ OSD.addEventListener('click', function(){
     OSD.classList.toggle("has-background-danger-dark");
     OSD.classList.toggle("has-text-white");
     actOSD.classList.toggle("is-hidden");
-    actOSD.classList.toggle("fadeIn");
+    actOSD.classList.add("fadeIn");
 });
 
 penT.addEventListener('click', function(){
@@ -117,7 +117,7 @@ penT.addEventListener('click', function(){
     penT.classList.toggle("has-background-danger-dark");
     penT.classList.toggle("has-text-white");
     actpenT.classList.toggle("is-hidden");
-    actpenT.classList.toggle("fadeIn");
+    actpenT.classList.add("fadeIn");
 });
 
 Beginner.addEventListener('click', function(){
@@ -125,7 +125,7 @@ Beginner.addEventListener('click', function(){
     Beginner.classList.toggle("has-background-link-dark");
     Beginner.classList.toggle("has-text-white");
     actBeginner.classList.toggle("is-hidden");
-    actBeginner.classList.toggle("fadeIn");
+    actBeginner.classList.add("fadeIn");
 });
 
 Intermediate.addEventListener('click', function(){
@@ -133,7 +133,7 @@ Intermediate.addEventListener('click', function(){
     Intermediate.classList.toggle("has-background-link-dark");
     Intermediate.classList.toggle("has-text-white");
     actIntermediate.classList.toggle("is-hidden");
-    actIntermediate.classList.toggle("fadeIn");
+    actIntermediate.classList.add("fadeIn");
 });
 
 Expert.addEventListener('click', function(){
@@ -141,7 +141,7 @@ Expert.addEventListener('click', function(){
     Expert.classList.toggle("has-background-link-dark");
     Expert.classList.toggle("has-text-white");
     actExpert.classList.toggle("is-hidden");
-    actExpert.classList.toggle("fadeIn");
+    actExpert.classList.add("fadeIn");
 });
 
 //-----------------------LANGUAGES--------------------------------------------------------
@@ -151,7 +151,7 @@ CPP.addEventListener('click', function(){
     CPP.classList.toggle("has-background-info-dark");
     CPP.classList.toggle("has-text-white");
     actCPP.classList.toggle("is-hidden");
-    actCPP.classList.toggle("fadeIn");
+    actCPP.classList.add("fadeIn");
 });
 
 JS.addEventListener('click', function(){
@@ -159,7 +159,7 @@ JS.addEventListener('click', function(){
     JS.classList.toggle("has-background-info-dark");
     JS.classList.toggle("has-text-white");
     actJS.classList.toggle("is-hidden");
-    actJS.classList.toggle("fadeIn");
+    actJS.classList.add("fadeIn");
 });
 
 CSharp.addEventListener('click', function(){
@@ -167,7 +167,7 @@ CSharp.addEventListener('click', function(){
     CSharp.classList.toggle("has-background-info-dark");
     CSharp.classList.toggle("has-text-white");
     actCSharp.classList.toggle("is-hidden");
-    actCSharp.classList.toggle("fadeIn");
+    actCSharp.classList.add("fadeIn");
 });
 
 PY.addEventListener('click', function(){
@@ -175,7 +175,7 @@ PY.addEventListener('click', function(){
     PY.classList.toggle("has-background-info-dark");
     PY.classList.toggle("has-text-white");
     actPY.classList.toggle("is-hidden");
-    actPY.classList.toggle("fadeIn");
+    actPY.classList.add("fadeIn");
 });
 
 GOL.addEventListener('click', function(){
@@ -183,7 +183,7 @@ GOL.addEventListener('click', function(){
     GOL.classList.toggle("has-background-info-dark");
     GOL.classList.toggle("has-text-white");
     actGOL.classList.toggle("is-hidden");
-    actGOL.classList.toggle("fadeIn");
+    actGOL.classList.add("fadeIn");
 });
 
 HTMLCSS.addEventListener('click', function(){
@@ -191,7 +191,7 @@ HTMLCSS.addEventListener('click', function(){
     HTMLCSS.classList.toggle("has-background-info-dark");
     HTMLCSS.classList.toggle("has-text-white");
     actHTMLCSS.classList.toggle("is-hidden");
-    actHTMLCSS.classList.toggle("fadeIn");
+    actHTMLCSS.classList.add("fadeIn");
 });
 
 PHP.addEventListener('click', function(){
@@ -199,7 +199,7 @@ PHP.addEventListener('click', function(){
     PHP.classList.toggle("has-background-info-dark");
     PHP.classList.toggle("has-text-white");
     actPHP.classList.toggle("is-hidden");
-    actPHP.classList.toggle("fadeIn");
+    actPHP.classList.add("fadeIn");
 });
 
 JAVA.addEventListener('click', function(){
@@ -207,7 +207,7 @@ JAVA.addEventListener('click', function(){
     JAVA.classList.toggle("has-background-info-dark");
     JAVA.classList.toggle("has-text-white");
     actJAVA.classList.toggle("is-hidden");
-    actJAVA.classList.toggle("fadeIn");
+    actJAVA.classList.add("fadeIn");
 });
 
 RUBY.addEventListener('click', function(){
@@ -215,7 +215,7 @@ RUBY.addEventListener('click', function(){
     RUBY.classList.toggle("has-background-info-dark");
     RUBY.classList.toggle("has-text-white");
     actRUBY.classList.toggle("is-hidden");
-    actRUBY.classList.toggle("fadeIn");
+    actRUBY.classList.add("fadeIn");
 });
 
 SWI.addEventListener('click', function(){
@@ -223,7 +223,7 @@ SWI.addEventListener('click', function(){
     SWI.classList.toggle("has-background-info-dark");
     SWI.classList.toggle("has-text-white");
     actSWI.classList.toggle("is-hidden");
-    actSWI.classList.toggle("fadeIn");
+    actSWI.classList.add("fadeIn");
 });
 
 ASM86.addEventListener('click', function(){
@@ -231,7 +231,7 @@ ASM86.addEventListener('click', function(){
     ASM86.classList.toggle("has-background-info-dark");
     ASM86.classList.toggle("has-text-white");
     actASM86.classList.toggle("is-hidden");
-    actASM86.classList.toggle("fadeIn");
+    actASM86.classList.add("fadeIn");
 });
 
 ASM64.addEventListener('click', function(){
@@ -239,7 +239,7 @@ ASM64.addEventListener('click', function(){
     ASM64.classList.toggle("has-background-info-dark");
     ASM64.classList.toggle("has-text-white");
     actASM64.classList.toggle("is-hidden");
-    actASM64.classList.toggle("fadeIn");
+    actASM64.classList.add("fadeIn");
 });
 
 
