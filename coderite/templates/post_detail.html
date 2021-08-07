@@ -1,5 +1,5 @@
 <!--Similar to card.html but formatted to fix extra content-->
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} {% block content %} {%load static%}
 
 <div class="columns">
   <div class="column is-half" style="background-color: #0f1012">
@@ -17,7 +17,7 @@
         <figure class="image is-128x128 ml-4">
           <!--PICTURE + ALT-->
           <!--KEEP AS SVG-->
-          <img src='{/assets/{{post.image}}' alt="EXAMPLEIMAGE" />
+          <img src="/assets/coderite/assets/image-code.jpg" alt="EXAMPLEIMAGE" />
         </figure>
       </div>
       <div class="card-content">
