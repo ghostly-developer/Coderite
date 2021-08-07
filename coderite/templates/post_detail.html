@@ -13,6 +13,8 @@
         align-items: center;
       "
     >
+<<<<<<< HEAD
+=======
       <div class="card-image">
         <figure class="image is-128x128 ml-4">
           <!--PICTURE + ALT-->
@@ -20,19 +22,22 @@
           <img src="/assets/coderite/assets/image-code.jpg" alt="EXAMPLEIMAGE" />
         </figure>
       </div>
+>>>>>>> main
       <div class="card-content">
         <div class="media">
           <div class="media-content has-text-white">
             <!--Add Title & Author-->
-            <p class="title is-4 has-text-white">
+            <p class="title is-2 has-text-white">
               <a href="">{{post.title}}</a>
             </p>
-            <p class="subtitle is-6 has-text-white">{{post.author}}</p>
+            <p class="subtitle is-4 has-text-white is-family-code">
+              {{post.author}}
+            </p>
           </div>
         </div>
 
         <!--EXTENDED CONTENT (NO MAX LIMIT)-->
-        <div class="content has-text-white">
+        <div class="content has-text-white has-text-medium">
           {{post.content}}
           <br />
         </div>
@@ -55,7 +60,9 @@
       <div class="card-content">
         <div class="media">
           <div class="media-content has-text-white">
-            <p class="title is-4 has-text-white">Related Articles/Guides:</p>
+            <p class="title is-4 has-text-white is-family-code">
+              Related Articles/Guides:
+            </p>
           </div>
         </div>
 
@@ -63,7 +70,9 @@
         <div class="content has-text-white">
           <div>
             <!--Change the title according to suggested content-->
-            <h5 class="has-text-white">RELATED ARTICLE/VIDEO 1:</h5>
+            <h5 class="has-text-white is-family-code">
+              RELATED ARTICLE/VIDEO 1:
+            </h5>
             <iframe
               width="400"
               height="200"
@@ -76,7 +85,9 @@
           </div>
           <div class="pt-4">
             <!--Change the title according to suggested content-->
-            <h5 class="has-text-white">RELATED ARTICLE/VIDEO 2:</h5>
+            <h5 class="has-text-white is-family-code">
+              RELATED ARTICLE/VIDEO 2:
+            </h5>
             <!--KEEP AS 2 : 1 FOR ALL CONTENT, NOT ADVISABLE TO GO ABOVE 400 X 200 OR 1 : 1 RATIO FOR IMAGES (500 X 500 IDEALLY)-->
             <iframe
               width="400"
