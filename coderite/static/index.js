@@ -7,7 +7,10 @@ const addRepo = document.querySelector('#addRepo');
 const body = document.querySelector('body');
 
 const webD = document.querySelector('#webD');
+const actwebD = document.querySelector('#ACTwebD');
 
+const Beginner = document.querySelector('#Beginner')
+const actBeginner = document.querySelector('#ACTBeginner');
 
 burgerIcon.addEventListener('click', function(){
     console.log("Changed Active");
@@ -23,5 +26,11 @@ dropDown.addEventListener('click', function(){
 
 webD.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
-    webD.classList.toggle("is-active");
+    actwebD.classList.toggle("is-hidden");
+});
+
+Beginner.addEventListener('click', function(){
+    console.log("They should invent radio-functioning buttons");
+    actBeginner.classList.toggle("is-hidden");
+    actBeginner.classList.add("fadeIn");
 });

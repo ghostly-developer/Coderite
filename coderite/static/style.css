@@ -34,6 +34,19 @@ html {
   }
 }
 
+.fadeIn {
+  animation: appearAnim 1s ease-in-out;
+}
+@keyframes appearAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .is-dark {
   color: #1a1c1e;
   background: #1a1c1e;
