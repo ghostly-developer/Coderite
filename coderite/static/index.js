@@ -6,7 +6,8 @@ const AddTBtn = document.querySelector('#addTBtn');
 const AddTag = document.querySelector('#addTag');
 const addRepo = document.querySelector('#addRepo');
 const body = document.querySelector('body');
-const allBtn = document.querySelectorAll('#allBtn');
+
+const webD = document.querySelector('#webD');
 
 
 burgerIcon.addEventListener('click', function(){
@@ -28,4 +29,9 @@ addTBtn.addEventListener('click', function(){
 deletebtn.addEventListener('click', function(){
     console.log("Add Tag De-active");
     AddTag.classList.toggle("is-hidden");
+});
+
+webD.addEventListener('click', function(){
+    console.log("They should invent radio-functioning buttons");
+    webD.classList.toggle("is-active");
 });
