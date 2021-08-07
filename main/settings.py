@@ -44,6 +44,10 @@ MEDIA_ROOT = [
     'coderite/assets/'
 ]
 
+STATICFILES_DIR = [
+    'coderite\static'
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
