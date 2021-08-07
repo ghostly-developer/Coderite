@@ -22,6 +22,9 @@ const actOSD = document.querySelector('#ACTOSD');
 const penT = document.querySelector('#penT');
 const actpenT = document.querySelector('#ACTpenT');
 
+const firmD = document.querySelector('#firmD')
+const actfirmD = document.querySelector('#ACTfirmD');
+
 const Gen = document.querySelector('#Gen');
 const actGen = document.querySelector('#ACTGen');
 
@@ -129,6 +132,14 @@ Gen.addEventListener('click', function(){
     Gen.classList.toggle("has-text-white");
     actGen.classList.toggle("is-hidden");
     actGen.classList.add("fadeIn");
+});
+
+firmD.addEventListener('click', function(){
+    console.log("They should invent radio-functioning buttons");
+    firmD.classList.toggle("has-background-danger-dark");
+    firmD.classList.toggle("has-text-white");
+    actfirmD.classList.toggle("is-hidden");
+    actfirmD.classList.add("fadeIn");
 });
 
 Beginner.addEventListener('click', function(){
@@ -266,6 +277,9 @@ resetTag.addEventListener('click', function(){
     actOSD.classList.add("is-hidden");
     actpenT.classList.add("is-hidden");
     actGen.classList.add("is-hidden");
+    actfirmD.classList.add("is-hidden");
+
+    
     actBeginner.classList.add("is-hidden");
     actIntermediate.classList.add("is-hidden");
     actExpert.classList.add("is-hidden");
@@ -290,6 +304,7 @@ resetTag.addEventListener('click', function(){
     OSD.classList.remove("has-background-danger-dark");
     penT.classList.remove("has-background-danger-dark");
     Gen.classList.remove("has-background-danger-dark");
+    firmD.classList.remove("has-background-danger-dark");
 
     Beginner.classList.remove("has-background-link-dark");
     Intermediate.classList.remove("has-background-link-dark");
@@ -315,6 +330,7 @@ resetTag.addEventListener('click', function(){
     OSD.classList.remove("has-text-white");
     penT.classList.remove("has-text-white");
     Gen.classList.remove("has-text-white");
+    firmD.classList.remove("has-text-white");
 
     Beginner.classList.remove("has-text-white");
     Intermediate.classList.remove("has-text-white");
