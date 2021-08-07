@@ -68,3 +68,7 @@ html {
 .card .card-image .image img {
   height: 200px;
 }
+
+.selectedField {
+  background-color: rgb(255, 204, 204);
+}

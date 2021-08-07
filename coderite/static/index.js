@@ -80,6 +80,7 @@ webD.addEventListener('click', function(){
     console.log("They should invent radio-functioning buttons");
     actwebD.classList.toggle("is-hidden");
     actwebD.classList.toggle("fadeIn");
+    webD.classList.add("selectedField");
 });
 
 softwareD.addEventListener('click', function(){
