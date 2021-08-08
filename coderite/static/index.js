@@ -1,7 +1,9 @@
 const deletebtn = document.querySelector('#delete');
 const burgerIcon = document.querySelector('#burger');
 const navLinks = document.querySelector('#nav-links');
+const navLinks2 = document.querySelector('#nav-links2');
 const dropDown = document.querySelector('#dropdown');
+const dropDown2 = document.querySelector('#dropdown2');
 const AddTag = document.querySelector('#addTag');
 const addRepo = document.querySelector('#addRepo');
 const body = document.querySelector('body');
@@ -77,11 +79,6 @@ burgerIcon.addEventListener('click', function(){
     console.log("Changed Active");
     burgerIcon.classList.toggle('is-active');
     navLinks.classList.toggle('is-active');
-});
-
-dropDown.addEventListener('click', function(){
-    console.log("Changed Active");
-    dropDown.classList.toggle('is-active');
 });
 
 //------------------------dont look under here------------------
