@@ -1,31 +1,39 @@
-{%extends "base2.html"%}
+{%extends "base2.html"%} {% block content %}
 
-{% block content %}
+<main class="container content box is-dark mt-5" style="width: 50vh">
+  <h1 class="pb-4 has-text-white">Create Post</h1>
 
-<h1>Create Post</h1>
-<br>
-<br>
-
-<form method="POST">
+  <form method="POST" class="has-text-grey-lighter">
     {%csrf_token%}
-    <p>Choose File: {{form.image}}</p>
-    <br>
-    <p>post title: {{form.title}}</p>
-    <br>
-    <p>post author: {{form.author}}</p>
-    <br>
-    <P>post description: {{form.description}}</P>
-    <br>
-    <p>post content: {{form.content}}</p>
-    <br>
-    <p>what field is it for? {{form.field_tag}}</p>
-    <br>
-    <p>what level of learning? {{form.level_tag}}</p>
-    <br>
-    <p>primary language? {{form.lang_tag}}</p>
-    <br>
+    <h3 class="pb-2 has-text-white">Choose File:</h3>
+    {{form.image}}
+    <br />
+    <h3 class="pb-2 has-text-white" placeholder="Title">Post Title:</h3>
+    {{form.title}}
+    <br />
+    <h3 class="pb-2 has-text-white" placeholder="Author">Post Author:</h3>
+    {{form.author}}
+    <br />
+    <h3 class="pb-2 has-text-white">Post Description:</h3>
+    {{form.description}}
+    <br />
+    <h3 class="pb-2 has-text-white">Post Content:</h3>
+    {{form.content}}
+    <br />
+    <h3 class="pb-2 has-text-white">Field:</h3>
+    {{form.field_tag}}
+    <br />
+    <h3 class="pb-2 has-text-white">Skill Level:</h3>
+    {{form.level_tag}}
+    <br />
+    <h3 class="pb-2 has-text-white">Primary Language:</h3>
+    {{form.lang_tag}}
+    <br />
 
-    <button>Post</button>
+    <button class="button is-success is-outlined is-rounded mt-4" type="submit">
+      Post
+    </button>
 
-
-{%endblock%}
+    {%endblock%}
+  </form>
+</main>
