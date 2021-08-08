@@ -19,6 +19,7 @@ class Post(models.Model):
     lang_tag = models.CharField(max_length=50, default="blank")
     status = models.IntegerField(choices=STATUS, default=0)
 class Meta:
+    db_table = 'PostObjects'
     ordering = ['-created_on']
 
 def __str__(self):

@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import generic
-from .models  import Post
+from .models import Post
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from coderite.forms import SignUpForm
@@ -27,4 +27,14 @@ def register(request):
         form = SignUpForm()
     return render(request, 'register.html', {'form': form})
 
+def PostFilter(request):
+    if request.method=="POST":
+        field_query = request.POST.get('field_tag')
+        level_query = request.POST.get('level_tag')
+        lang_query = request.POST.get('lang_tag')
+        Postsearchobj = Post.objects.raw('select * from PostObjects where field_tag="'+field_query+'" level_tag="'+level_query+'"and lang_tag="'+lang_query+'"')
+        return render(request, 'Index.html', {"Post": Postsearchobj})
 
+    else:
+        Postobj = Post.objects.raw('select * from PostObjects')
+        return render(request, 'index.html', {"Post": Postobj})
