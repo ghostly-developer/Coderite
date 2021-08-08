@@ -3,6 +3,7 @@ from django.views import generic
 from .models  import Post
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
+from coderite.forms import SignUpForm
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
@@ -14,7 +15,7 @@ class PostDetail(generic.DetailView):
 
 def register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
@@ -23,7 +24,7 @@ def register(request):
             login(request, user)
             return redirect('home')
     else:
-        form = UserCreationForm()
+        form = SignUpForm()
     return render(request, 'register.html', {'form': form})
 
 
