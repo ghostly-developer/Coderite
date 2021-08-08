@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.validators import FileExtensionValidator
+from django.urls import reverse
 
 STATUS = (
     (0, 'Draft'),
@@ -18,6 +19,9 @@ class Post(models.Model):
     level_tag = models.CharField(max_length=50, default="blank")
     lang_tag = models.CharField(max_length=50, default="blank")
     status = models.IntegerField(choices=STATUS, default=0)
+
+    def get_absolute_url(self):
+        return reverse('index.html', args=(str(self.id)))
 class Meta:
     db_table = 'PostObjects'
     ordering = ['-created_on']
