@@ -9,8 +9,8 @@ STATUS = (
 # Create your models here.
 class Post(models.Model):
     image = models.FileField(upload_to = 'coderite/assets', validators=[FileExtensionValidator(['svg'])])
-    slug = models.SlugField(max_length=200, unique=True)
     title = models.CharField(max_length=250)
+    slug = models.SlugField(max_length=200, unique=True, default=title)
     author = models.CharField(max_length=200)
     description = models.CharField(max_length=200)
     created_on = models.DateTimeField(auto_now_add=True)
