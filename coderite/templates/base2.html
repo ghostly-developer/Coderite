@@ -1,0 +1,105 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/89001a8358.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="{%static 'style.css'%}" />
+    <title>Coderite</title>
+  </head>
+
+  <body style="background-color: #0f1012">
+    <nav class="navbar is-dark" style="background-color: #212121">
+      <div class="navbar-brand" style="background-color: #212121">
+        <a href="http://127.0.0.1:9000/" class="logo"
+          ><img
+            src="{%static 'coderite.png'%}"
+            alt="CODERITE"
+            width="25"
+            height="25"
+            class="ml-6 my-4"
+        /></a>
+        <a class="navbar-burger mt-2 mr-2" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="nav-links" style="background-color: #212121">
+        <div class="navbar-end">
+          <i class="fas fa-plus navbar-item pr-0"></i>
+          <div class="navbar-item has-dropdown is-right" id="dropdown2">
+            <a class="navbar-link ml-0 pl-4 is-hidden-touch pr-5"></a>
+            <div
+              class="navbar-dropdown is-right"
+              style="background-color: #212121; border-top: 2px solid #585858"
+            >
+              <a
+                href="#"
+                class="navbar-item has-text-grey-light has-text-weight-bold"
+              >
+                Create Post
+              </a>
+            </div>
+          </div>
+          <img
+            class="pfp mt-4 is-hidden-touch"
+            href="http://127.0.0.1:9000/"
+            src="{%static 'default.png'%}"
+            alt="PFP"
+          />
+          <!------------------DROPDOWN------------------------>
+          <div class="navbar-item has-dropdown is-right" id="dropdown">
+            <a class="navbar-link ml-1 pl-0 is-hidden-touch"></a>
+            <div
+              class="navbar-dropdown is-right"
+              style="background-color: #212121; border-top: 2px solid #585858"
+            >
+              <p class="navbar-item has-text-grey-light">Signed in as:</p>
+              <a
+                href="#"
+                class="navbar-item has-text-grey-light has-text-weight-bold"
+                id="user_name"
+              >
+                default-user
+              </a>
+              <hr class="navbar-divider is-light" />
+              <a
+                href="{%url 'register'%}"
+                class="navbar-item has-text-grey-light"
+              >
+                Profile
+              </a>
+              <a href="#" class="navbar-item has-text-grey-light"> Settings </a>
+              <hr class="navbar-divider is-light" />
+              <a href="#" class="navbar-item has-text-grey-light"> Log-out </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--START-->
+    <section class="mt-0 pt-0" style="width: 100%">
+      {%block content%}
+      <!--main card content-->
+      {%endblock content%}
+    </section>
+
+    <script src="{% static 'index.js' %}"></script>
+  </body>
+</html>
