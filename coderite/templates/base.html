@@ -41,6 +41,21 @@
       </div>
       <div class="navbar-menu" id="nav-links" style="background-color: #212121">
         <div class="navbar-end">
+          <i class="fas fa-plus navbar-item pr-0"></i>
+          <div class="navbar-item has-dropdown is-right" id="dropdown">
+            <a class="navbar-link ml-0 pl-4 is-hidden-touch pr-5"></a>
+            <div
+              class="navbar-dropdown is-right"
+              style="background-color: #212121; border-top: 2px solid #585858"
+            >
+              <a
+                href="#"
+                class="navbar-item has-text-grey-light has-text-weight-bold"
+              >
+                Create Post
+              </a>
+            </div>
+          </div>
           <img
             class="pfp mt-4 is-hidden-touch"
             href="http://127.0.0.1:9000/"
@@ -58,6 +73,7 @@
               <a
                 href="#"
                 class="navbar-item has-text-grey-light has-text-weight-bold"
+                id="user_name"
               >
                 default-user
               </a>
@@ -66,6 +82,7 @@
               <a href="#" class="navbar-item has-text-grey-light"> Settings </a>
               <hr class="navbar-divider is-light" />
               <a href="#" class="navbar-item has-text-grey-light"> Log-out </a>
+            </div>
           </div>
         </div>
       </div>
@@ -79,7 +96,11 @@
       >
         <div
           class="column is-3 is-hidden-mobile is-hidden-touch pt-6 pl-6 pr-6"
-          style="background: #121416; border-right: 1px solid #837a6c; height: 140vh;"
+          style="
+            background: #121416;
+            border-right: 1px solid #837a6c;
+            height: 140vh;
+          "
           id="main"
         >
           <div class="rows">
@@ -89,493 +110,601 @@
               >
                 Customize Tags:
                 <button
-                class="
-                  button
-                  is-success is-small is-pulled-right is-outlined
-                  has-text-weight-bold
-                "
-                id="resetTag"
-              >
-                Reset
-              </button>
+                  class="
+                    button
+                    is-success is-small is-pulled-right is-outlined
+                    has-text-weight-bold
+                  "
+                  id="resetTag"
+                >
+                  Reset
+                </button>
               </h3>
 
               <hr
                 class="rounded mt-2 mb-4"
-                style="border-top: 1px solid gray; border-radius: 3px; background-color: #808080;"
+                style="
+                  border-top: 1px solid gray;
+                  border-radius: 3px;
+                  background-color: #808080;
+                "
               />
 
               <div style="display: inline">
-              <button  id="webD" class="
-                button
-                radio
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-danger
-                selectedField
-              ">
-              Web Developer
-            </button>
-            <button  id="softwareD" class="
-                button
-                radio
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-danger
-              ">
-              Software Developer
-            </button>
-            <button  id="gameD" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-danger
-              ">
-              Game Developer
-            </button>
-            <button id="OSD" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-danger
-              ">
-              OS Developer
-            </button>
-            <button id="penT" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-danger
-              ">
-              Penetration Tester
-            </button>
-            <button id="firmD" class="
-            button
-            is-link is-rounded is-outlined
-            mr-2
-            mb-2
-            is-danger
-          ">
-            Firmware Developer
-            </button>
-            <button id="Gen" class="
-            button
-            is-link is-rounded is-outlined
-            mr-2
-            mb-2
-            is-danger
-          ">
-            General
-          </button>
-            
-            <hr
-            class="rounded mt-2 mb-4"
-            style="border-top: 1px solid gray; border-radius: 3px; background-color: #808080;"
-          />
-            <button  id="Beginner" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-link
-              ">
-              Beginner
-            </button>
-            <button  id="Intermediate" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-link
-              ">
-              Intermediate
-            </button>
-            <button  id="Expert" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-link
-              ">
-              Expert
-            </button>
-            
-            <hr
-            class="rounded mt-2 mb-4"
-            style="border-top: 1px solid gray; border-radius: 3px; background-color: #808080;"
-          />
-            <button  id="CPP" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-info
-              ">
-              C/C++
-            </button>
-            <button  id="JS" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-info
-              ">
-              JS
-            </button>
-            <button  id="CSharp" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-info
-              ">
-              C#
-            </button>
-            <button  id="PY" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-info
-              ">
-              Python
-            </button>
-            <button  id="GOL" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-info
-              ">
-              Golang
-            </button>
-            <button  id="HTMLCSS" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-info
-              ">
-              HTML/CSS
-            </button>
-            <button  id="PHP" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-info
-              ">
-              PHP
-            </button>
-            <button  id="JAVA" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-info
-              ">
-              Java
-            </button>
-            <button  id="RUBY" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-info
-              ">
-              Ruby
-            </button>
-            <button  id="SWI" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-info 
-              ">
-              Swift
-            </button>
-            <button  id="ASM86" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-info
-              ">
-              ASM x86
-            </button>
-            <button  id="ASM64" class="
-                button
-                is-link is-rounded is-outlined
-                mr-2
-                mb-2
-                is-info
-              ">
-              ASM x64
-            </button>
-            
-            <hr
-            class="rounded mt-2 mb-4"
-            style="border-top: 1px solid gray; border-radius: 3px; background-color: #808080;"
-          />
-          <h4
-          class="has-text-grey-light has-text-weight-semibold is-size-5 pb-4"
-        >
-          Active Tags:
-        </h4>
-          <button  id="ACTwebD" class="
-          button
-          radio
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-danger
-          is-active
-          is-hidden
-        ">
-        Web Developer
-      </button>
-      <button  id="ACTsoftwareD" class="
-          button
-          radio
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-danger
-        ">
-        Software Developer
-      </button>
-      <button  id="ACTgameD" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-danger
-        ">
-        Game Developer
-      </button>
-      <button id="ACTOSD" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-danger
-        ">
-        OS Developer
-      </button>
-      <button id="ACTpenT" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-danger
-        ">
-        Penetration Tester
-      </button>
+                <button
+                  id="webD"
+                  class="
+                    button
+                    radio
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-danger
+                    selectedField
+                  "
+                >
+                  Web Developer
+                </button>
+                <button
+                  id="softwareD"
+                  class="
+                    button
+                    radio
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-danger
+                  "
+                >
+                  Software Developer
+                </button>
+                <button
+                  id="gameD"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-danger
+                  "
+                >
+                  Game Developer
+                </button>
+                <button
+                  id="OSD"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-danger
+                  "
+                >
+                  OS Developer
+                </button>
+                <button
+                  id="penT"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-danger
+                  "
+                >
+                  Penetration Tester
+                </button>
+                <button
+                  id="firmD"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-danger
+                  "
+                >
+                  Firmware Developer
+                </button>
+                <button
+                  id="Gen"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-danger
+                  "
+                >
+                  General
+                </button>
 
-      <button id="ACTfirmD" class="
-      button
-      is-link is-rounded is-outlined
-      mr-2
-      mb-2
-      is-active
-      is-hidden
-      is-danger
-    ">
-      Firmware Developer
-      </button>
+                <hr
+                  class="rounded mt-2 mb-4"
+                  style="
+                    border-top: 1px solid gray;
+                    border-radius: 3px;
+                    background-color: #808080;
+                  "
+                />
+                <button
+                  id="Beginner"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-link
+                  "
+                >
+                  Beginner
+                </button>
+                <button
+                  id="Intermediate"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-link
+                  "
+                >
+                  Intermediate
+                </button>
+                <button
+                  id="Expert"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-link
+                  "
+                >
+                  Expert
+                </button>
 
-      <button id="ACTGen" class="
-      button
-      is-link is-rounded is-outlined
-      mr-2
-      mb-2
-      is-active
-      is-hidden
-      is-danger
-    ">
-      General
-    </button>
+                <hr
+                  class="rounded mt-2 mb-4"
+                  style="
+                    border-top: 1px solid gray;
+                    border-radius: 3px;
+                    background-color: #808080;
+                  "
+                />
+                <button
+                  id="CPP"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-info
+                  "
+                >
+                  C/C++
+                </button>
+                <button
+                  id="JS"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-info
+                  "
+                >
+                  JS
+                </button>
+                <button
+                  id="CSharp"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-info
+                  "
+                >
+                  C#
+                </button>
+                <button
+                  id="PY"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-info
+                  "
+                >
+                  Python
+                </button>
+                <button
+                  id="GOL"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-info
+                  "
+                >
+                  Golang
+                </button>
+                <button
+                  id="HTMLCSS"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-info
+                  "
+                >
+                  HTML/CSS
+                </button>
+                <button
+                  id="PHP"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-info
+                  "
+                >
+                  PHP
+                </button>
+                <button
+                  id="JAVA"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-info
+                  "
+                >
+                  Java
+                </button>
+                <button
+                  id="RUBY"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-info
+                  "
+                >
+                  Ruby
+                </button>
+                <button
+                  id="SWI"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-info
+                  "
+                >
+                  Swift
+                </button>
+                <button
+                  id="ASM86"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-info
+                  "
+                >
+                  ASM x86
+                </button>
+                <button
+                  id="ASM64"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-info
+                  "
+                >
+                  ASM x64
+                </button>
 
-      <button  id="ACTBeginner" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-link
-        ">
-        Beginner
-      </button>
-      <button  id="ACTIntermediate" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-link
-        ">
-        Intermediate
-      </button>
-      <button  id="ACTExpert" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-link
-        ">
-        Expert
-      </button>
-      
-      <button  id="ACTCPP" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-info
-        ">
-        C/C++
-      </button>
-      <button  id="ACTJS" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-info
-        ">
-        JS
-      </button>
-      <button  id="ACTCSharp" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-info
-        ">
-        C#
-      </button>
-      <button  id="ACTPY" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-info
-        ">
-        Python
-      </button>
-      <button  id="ACTGOL" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-info
-        ">
-        Golang
-      </button>
-      <button  id="ACTHTMLCSS" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-info
-        ">
-        HTML/CSS
-      </button>
-      <button  id="ACTPHP" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-info
-        ">
-        PHP
-      </button>
-      <button  id="ACTJAVA" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-info
-        ">
-        Java
-      </button>
-      <button  id="ACTRUBY" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-info
-        ">
-        Ruby
-      </button>
-      <button  id="ACTSWI" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-info 
-        ">
-        Swift
-      </button>
-      <button  id="ACTASM86" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-info
-        ">
-        ASM x86
-      </button>
-      <button  id="ACTASM64" class="
-          button
-          is-link is-rounded is-outlined
-          mr-2
-          mb-2
-          is-active
-          is-hidden
-          is-info
-        ">
-        ASM x64
-      </button>
-            </div>
+                <hr
+                  class="rounded mt-2 mb-4"
+                  style="
+                    border-top: 1px solid gray;
+                    border-radius: 3px;
+                    background-color: #808080;
+                  "
+                />
+                <h4
+                  class="
+                    has-text-grey-light has-text-weight-semibold
+                    is-size-5
+                    pb-4
+                  "
+                >
+                  Active Tags:
+                </h4>
+                <button
+                  id="ACTwebD"
+                  class="
+                    button
+                    radio
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-danger is-active is-hidden
+                  "
+                >
+                  Web Developer
+                </button>
+                <button
+                  id="ACTsoftwareD"
+                  class="
+                    button
+                    radio
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-danger
+                  "
+                >
+                  Software Developer
+                </button>
+                <button
+                  id="ACTgameD"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-danger
+                  "
+                >
+                  Game Developer
+                </button>
+                <button
+                  id="ACTOSD"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-danger
+                  "
+                >
+                  OS Developer
+                </button>
+                <button
+                  id="ACTpenT"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-danger
+                  "
+                >
+                  Penetration Tester
+                </button>
+
+                <button
+                  id="ACTfirmD"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-danger
+                  "
+                >
+                  Firmware Developer
+                </button>
+
+                <button
+                  id="ACTGen"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-danger
+                  "
+                >
+                  General
+                </button>
+
+                <button
+                  id="ACTBeginner"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-link
+                  "
+                >
+                  Beginner
+                </button>
+                <button
+                  id="ACTIntermediate"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-link
+                  "
+                >
+                  Intermediate
+                </button>
+                <button
+                  id="ACTExpert"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-link
+                  "
+                >
+                  Expert
+                </button>
+
+                <button
+                  id="ACTCPP"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-info
+                  "
+                >
+                  C/C++
+                </button>
+                <button
+                  id="ACTJS"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-info
+                  "
+                >
+                  JS
+                </button>
+                <button
+                  id="ACTCSharp"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-info
+                  "
+                >
+                  C#
+                </button>
+                <button
+                  id="ACTPY"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-info
+                  "
+                >
+                  Python
+                </button>
+                <button
+                  id="ACTGOL"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-info
+                  "
+                >
+                  Golang
+                </button>
+                <button
+                  id="ACTHTMLCSS"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-info
+                  "
+                >
+                  HTML/CSS
+                </button>
+                <button
+                  id="ACTPHP"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-info
+                  "
+                >
+                  PHP
+                </button>
+                <button
+                  id="ACTJAVA"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-info
+                  "
+                >
+                  Java
+                </button>
+                <button
+                  id="ACTRUBY"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-info
+                  "
+                >
+                  Ruby
+                </button>
+                <button
+                  id="ACTSWI"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-info
+                  "
+                >
+                  Swift
+                </button>
+                <button
+                  id="ACTASM86"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-info
+                  "
+                >
+                  ASM x86
+                </button>
+                <button
+                  id="ACTASM64"
+                  class="
+                    button
+                    is-link is-rounded is-outlined
+                    mr-2
+                    mb-2
+                    is-active is-hidden is-info
+                  "
+                >
+                  ASM x64
+                </button>
+              </div>
             </div>
           </div>
           <div class="row is-4">
@@ -595,7 +724,12 @@
             </h3>
             <div class="field pt-2">
               <div class="control">
-                <input class="input is-dark has-text-white is-focused" id="repoSearch" type="text" placeholder="Find a repository" />
+                <input
+                  class="input is-dark has-text-white is-focused"
+                  id="repoSearch"
+                  type="text"
+                  placeholder="Find a repository"
+                />
               </div>
               <ul class="repoList">
                 <li class="has-text-weight-semibold mb-2 pt-4">
@@ -623,8 +757,8 @@
                   <a href="#">default-user/exampleRepo</a>
                 </li>
               </ul>
-            <!--Ideally this would've been part of integrating GitHub into Coderite but I doubt we will actually get this to work-->
-            <!--Add either 'far fa-share-square' for forks or 'fas fa-book' for normal repos. Fork icon might change. Enter the username and repo name in <a> e.g default-user/repo-->
+              <!--Ideally this would've been part of integrating GitHub into Coderite but I doubt we will actually get this to work-->
+              <!--Add either 'far fa-share-square' for forks or 'fas fa-book' for normal repos. Fork icon might change. Enter the username and repo name in <a> e.g default-user/repo-->
             </div>
           </div>
           <div class="row is-4 pt-4"></div>
@@ -640,9 +774,9 @@
             align-content: flex-start;
           "
         >
-        {%block content%}
-        <!--main card content-->
-        {%endblock content%}
+          {%block content%}
+          <!--main card content-->
+          {%endblock content%}
         </div>
       </div>
     </section>

@@ -34,6 +34,10 @@ html {
   }
 }
 
+a:hover {
+  display: none;
+}
+
 .fadeIn {
   animation: appearAnim 0.4s ease-in-out;
 }

@@ -1,0 +1,89 @@
+<div class="field">
+  <label class="label">Title</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Text input" />
+  </div>
+</div>
+
+<div class="field is-grouped">
+  <label class="label">Tags</label>
+  <div class="control">
+    <div class="select" name="Field" id="selectedField">
+      <select>
+        <option>Web Developer</option>
+        <option>Software Developer</option>
+        <option>Game Developer</option>
+        <option>OS Developer</option>
+        <option>Penetration Tester</option>
+        <option>Game Developer</option>
+        <option>General</option>
+      </select>
+    </div>
+  </div>
+  <div class="control">
+    <div class="select" name="skill" id="selectedSkill">
+      <select>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Expert</option>
+      </select>
+    </div>
+  </div>
+  <div class="control">
+    <div class="select">
+      <select name="Languages" id="selectedLanguages">
+        <option>C++</option>
+        <option>JS</option>
+        <option>C#</option>
+        <option>Python</option>
+        <option>Golang</option>
+        <option>HTML/CSS</option>
+        <option>PHP</option>
+        <option>Java</option>
+        <option>Ruby</option>
+        <option>Swift</option>
+        <option>ASM x86</option>
+        <option>ASM x64</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Post Detail (HTML Tags Supported)</label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Post Details"></textarea>
+  </div>
+</div>
+
+<div class="field is-grouped">
+  <div class="control">
+    <button type="submit" class="button is-rounded is-outlined">Submit</button>
+  </div>
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Are You Sure?</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <p>This action is irreverisble</p>
+      </section>
+      <footer class="modal-card-foot">
+        <button
+          id="confirmCancel"
+          class="button is-danger is-outlined is-rounded"
+        >
+          Confirm
+        </button>
+        <button
+          id="stopCancel"
+          class="button is-success is-outlined is-rounded"
+        >
+          Cancel
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>
